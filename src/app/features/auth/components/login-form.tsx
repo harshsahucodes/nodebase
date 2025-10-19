@@ -85,6 +85,12 @@ export const LoginForm = () => {
                     type="button"
                     disabled={isPending}
                   >
+                    <Image
+                      width={20}
+                      height={20}
+                      alt="Github"
+                      src="/logos/github.svg"
+                    />{" "}
                     Continue with Github
                   </Button>
                   <Button
@@ -93,6 +99,12 @@ export const LoginForm = () => {
                     type="button"
                     disabled={isPending}
                   >
+                    <Image
+                      width={20}
+                      height={20}
+                      alt="Google"
+                      src="/logos/google.svg"
+                    />{" "}
                     Continue with Google
                   </Button>
                 </div>

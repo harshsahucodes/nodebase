@@ -1,16 +1,12 @@
-import { LoginForm } from '@/app/features/auth/components/login-form'
-import { requireUnauth } from '@/lib/auth-utils'
-import React from 'react'
+import { LoginForm } from "@/app/features/auth/components/login-form";
+import { requireUnauth } from "@/lib/auth-utils";
+import React from "react";
 
-type Props = {}
+type Props = {};
 
-const Page = async(props: Props) => {
-  await requireUnauth()
-  return (
-    <div>
-        <LoginForm />
-    </div>
-  )
-}
+const Page = async (props: Props) => {
+  await requireUnauth();
+  return <LoginForm />;
+};
 
-export default Page
+export default Page;
