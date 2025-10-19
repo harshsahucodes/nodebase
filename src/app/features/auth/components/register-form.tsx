@@ -94,6 +94,12 @@ export const RegisterForm = () => {
                     type="button"
                     disabled={isPending}
                   >
+                    <Image
+                      width={20}
+                      height={20}
+                      alt="Github"
+                      src="/logos/github.svg"
+                    />{" "}
                     Continue with Github
                   </Button>
                   <Button
@@ -102,6 +108,12 @@ export const RegisterForm = () => {
                     type="button"
                     disabled={isPending}
                   >
+                    <Image
+                      width={20}
+                      height={20}
+                      alt="Google"
+                      src="/logos/google.svg"
+                    />{" "}
                     Continue with Google
                   </Button>
                 </div>
@@ -164,7 +176,7 @@ export const RegisterForm = () => {
                 <div className="text-center text-sm">
                   Already have an account?{" "}
                   <Link href="/login" className="underline underline-offset-4">
-                    Sign up
+                    Login
                   </Link>
                 </div>
               </div>

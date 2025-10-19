@@ -6,11 +6,7 @@ type Props = {};
 
 const Page = async (props: Props) => {
   await requireUnauth();
-  return (
-    <div>
-      <RegisterForm />
-    </div>
-  );
+  return <RegisterForm />;
 };
 
 export default Page;
