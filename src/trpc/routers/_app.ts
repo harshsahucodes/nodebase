@@ -1,9 +1,11 @@
 import { inngest } from "@/inngest/client";
 import { createTRPCRouter, protectedProcedure } from "../init";
 import prisma from "@/lib/db";
+import { TRPCError } from "@trpc/server";
 
 export const appRouter = createTRPCRouter({
   testAi: protectedProcedure.mutation(async () => {
+
     await inngest.send({ name: "execute/ai" });
 
     return { success: true, message: "Job Queued" };
