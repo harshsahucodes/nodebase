@@ -2,8 +2,8 @@ import {
   Editor,
   EditorError,
   EditorLoading,
-} from "@/app/features/auth/editor/components/editor";
-import EditorHeader from "@/app/features/auth/editor/components/editor-header";
+} from "@/app/features/editor/components/editor";
+import EditorHeader from "@/app/features/editor/components/editor-header";
 import { prefetchWorkflow } from "@/app/features/workflows/server/prefetch";
 import { requireAuth } from "@/lib/auth-utils";
 import { HydrateClient } from "@/trpc/server";
