@@ -8,7 +8,7 @@ import { SettingsIcon, TrashIcon } from "lucide-react";
 interface WorkflowNodeProps {
   children: ReactNode;
   showToolbar?: boolean;
-  onDelete?: string;
+  onDelete?: () => void;
   onSettings?: () => void;
   name?: string;
   description?: string;
