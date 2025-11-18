@@ -1,3 +1,4 @@
+import { Realtime } from "@inngest/realtime";
 import type { GetStepTools, Inngest } from "inngest";
 import { TZDate } from "react-day-picker";
 
@@ -10,7 +11,7 @@ export interface NodeExecutorParams<TData = Record<string, unknown>> {
   nodeId: string;
   context: WorkflowContext;
   step: StepTools;
-  // publish:
+  publish: Realtime.PublishFn;
 }
 
 export type NodeExecutor<TData = Record<string, unknown>> = (
